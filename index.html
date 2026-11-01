@@ -648,7 +648,7 @@ html[data-sec="azul"] main .pcard .btn-azul{background:var(--azul);color:#fff}
         <p class="disfrutar-dest">No tenés que esperar a conseguir la vida que querés para empezar a disfrutarla.</p>
         <svg class="muro" id="muro" viewBox="0 0 320 112" aria-hidden="true" focusable="false">
           <defs>
-            <pattern id="m-ladrillos" width="26" height="13" patternUnits="userSpaceOnUse" x="132" y="2">
+            <pattern id="m-ladrillos" width="26" height="13" patternUnits="userSpaceOnUse" x="97" y="2">
               <rect x="-1" y="-1" width="28" height="15" fill="#E7ECFC"/>
               <path d="M0 .35H26M0 6.5H26M13 .35V6.5M6.5 6.5V13M19.5 6.5V13" stroke="#9DB2F2" stroke-width=".7"/>
             </pattern>
@@ -1246,7 +1246,7 @@ hoja.querySelectorAll('[data-pago]').forEach(a => a.addEventListener('click', ()
   const $m = id => svg.querySelector('#' + id);
   const todo = $m('m-todo'), pared = $m('m-pared'), mastil = $m('m-mastil'), bandera = $m('m-bandera'), chispas = [...$m('m-chispas').children];
   const P = {cab:$m('m-cabeza'), cue:$m('m-cuerpo'), p1:$m('m-pierna1'), p2:$m('m-pierna2'), b1:$m('m-brazo1'), b2:$m('m-brazo2')};
-  const SUELO = 106, PASOS = 5, AW = 26, AH = 13, X0 = 132, INICIO = 40;
+  const SUELO = 106, PASOS = 5, AW = 26, AH = 13, X0 = 97, INICIO = 30;
   const tope = c => c < 0 ? SUELO : SUELO - (c + 1) * AH;
   const centro = c => c < 0 ? X0 - 9 : X0 + c * AW + AW / 2;
   const escalones = [];
